@@ -1,0 +1,379 @@
+body{
+    background-color: #f5f5f5;
+}
+/*********************header*****************/
+header{
+    background-image: url(../images/intro-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.navbar{
+    padding: 15px;
+    font-weight: 600;
+}
+
+.nav-item{
+    position: relative;
+}
+.nav-item::after {
+    content: '';
+    position: absolute;
+    margin-left: 10px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    transition: all 500ms ease; 
+}
+ .nav-item:hover:after{
+    width: 40%;
+    background-color: #fff;
+} 
+.nav-item:active:after{
+    width: 40%;
+    background-color: #fff;
+}
+header .layer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.title-name h1{
+    font-size: 72px;
+    position: relative;
+    z-index: 3333;
+}
+.title-name h1::after {
+    content: '';
+    border-right: 1px solid #fff;
+    position: absolute;
+    overflow: hidden;
+    font-size: 50px;
+    height: 80%;
+    top: 140px;
+    left: 400px;
+    animation: web 6s linear infinite;
+}
+
+@keyframes web{
+
+    0%{  
+        content: 'We';
+
+    }
+    5%{  
+        content: 'Web ';
+    }
+    10%{
+        content: 'Web D';
+    }
+    15%{
+        content: 'Web De';
+    }
+    20%{    
+      content: 'Web Des';
+
+    }
+    25%{  
+      content: 'Web Desi';
+
+    }
+    30%{    
+        content: 'Web Desig';
+
+    }
+    35%{   
+         content: 'Web Design';
+
+    }
+    40%{
+        content: 'Web Designe';
+    }
+    45%{
+        content: 'Web Designer';
+    }
+    50%{
+        content: 'Web ';
+    }
+    55%{
+        content: 'Web d';
+    }
+    60%{
+        content: 'Web De';
+    }
+    65%{
+        content: 'Web Dev';
+    }
+    70%{
+        content: 'Web Deve';
+    }
+    75%{
+        content: 'Web Devel';
+    }
+    80%{
+        content: 'Web Develo';
+    }
+    85%{
+        content: 'Web Develop';
+    }
+    90%{
+        content: 'Web Develope';
+    }
+    95%{
+        content: 'Web Developer';
+    }
+    100%{
+        content: 'Web Developer';
+    }
+}
+@media only screen and (max-width:600px){
+    .title-name h1::after{
+        left: 100px;
+        top: 200px;
+        overflow: hidden;
+        height:50% ;
+    }
+}
+@media only screen and (max-width:786px) and (min-width:601px){
+    .title-name h1::after{
+        left: 200px;
+        top: 200px;
+        overflow: hidden;
+        height:50% ;
+    }
+} 
+
+/*******************about**************************/
+.title{
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+ .about .bar-one{
+     width: 85%;
+ }
+ .about .bar-last{
+     width: 90%;
+ }
+ .about .about-text{
+     width: 85%;
+    font-size: 20px;
+    font-weight: 300;
+ }
+ .about h2::after{
+    content: '';
+    position: absolute;
+    margin-left: 35px;
+    width:18%;
+    background-color: #007bff;
+    left: 0;
+    top: 50px;
+    height: 3px;
+ }
+
+ /**********services**************/
+  .services-header h3{
+     font-size: 50px;
+     font-weight: 700;
+ }
+ .services-header p::after{
+    content: '';
+    position: absolute;
+    margin-left: 35px;
+    width:3%;
+    background-color: #007bff;
+    left: 46%;
+    top: 98%;
+    height: 3px;
+}
+ 
+.all-services i {
+    font-size: 50px;
+    border: 10px solid #007bff;
+    color: #1e1e1e;
+    border-radius: 50%;
+    padding: 28px;
+    margin-bottom: 5px;
+}
+.all-services .service:hover i{
+    background-color: #007bff;
+    border: 10px solid rgb(160, 202, 250);
+    color: #fff;
+    transition: all 1s;
+}
+
+.all-services .service{
+    border-radius: 16px;
+}
+.all-services .service p{
+    width: 90%;
+    margin: auto;
+}
+/********************counter******************************/
+.counter{
+    background-image: url(../images/counters-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.counter .layer , .slider .layer-slider ,.contact .layer-contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 5555;
+    background-color: rgba(0, 120, 225, 0.6);
+}
+
+.counter i{
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 8px solid  rgb(160, 202, 250);
+    border-radius: 50%;
+}
+.counter p {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+/******************************portfolio*********************/
+.portfolio .icon i{
+    font-size: 20px;
+    border: 1px #007bff solid;
+    color: #007bff;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.portfolio .work:hover img{
+    transform: scale(1.5);
+    transition: all 1s;
+} 
+
+/*************************slider******************************/
+.slider , .contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.desc i {
+    font-size: 20px;
+    color: #007bff;
+}
+.ind-bottom{
+    bottom: 92px;
+}
+
+/**************************blog********************************/
+.blog a{
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+   
+}
+.blog a:hover{
+    color: #0078ff;
+    transition: all 0.5s ease-in-out;
+}
+.blog .card-img::after{
+    content: 'Travel';
+    background-color: #0078ff;
+    padding: 5px 18px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: #fff;
+    top: 44%;
+    position: absolute;
+    left: 34%;
+
+}
+
+.blog .post img{
+    width: 20%;
+}
+.blog .post a{
+    font-size:15px;
+}
+.blog .time {
+    font-size: 15px;
+}
+
+/************************footer******************************/
+footer .contact-info {
+    top: 5%;
+    z-index:888888888 ;
+}
+footer h5{
+    font-size: 30px;
+    font-weight: 600;
+}
+footer hr{
+    width: 100px;
+    padding: 1px;
+    background-color: #0078ff;
+    position: relative;
+    right: 195px;
+}
+
+form button{
+    background-color: #0078ff;
+    border-radius: 50px;
+    border: none;
+}
+
+form button:hover{
+    background-color: #007bff;
+    border: 5px solid rgb(160, 202, 250);
+    transition: all 1s;
+}
+
+footer .contact-desc p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+footer .copy-right{
+    background-color: #0062d3;
+}
+
+footer ul{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: -33px;
+}
+
+footer li{
+    margin: 15px 0;
+}
+footer li i {
+    color:#0062d3;
+    margin-right: 10px;
+}
+
+footer .icons i {
+    font-size:20px;
+    font-weight: 600;
+    padding: 13px;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    margin-left: 8px;
+    
+}
+
+footer .icons i:hover{
+    background-color: #007bff;
+    border: 3px solid rgb(160, 202, 250);
+    color: #fff;
+    transition: all 1s;
+}
+
